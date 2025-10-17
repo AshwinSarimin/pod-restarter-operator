@@ -43,9 +43,9 @@ type PodRestarterReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-// +kubebuilder:rbac:groups=chaos.platform.com,resources=podrestarters,verbs=get;list;watch;create;update;patch;delete
-// +kubebuilder:rbac:groups=chaos.platform.com,resources=podrestarters/status,verbs=get;update;patch
-// +kubebuilder:rbac:groups=chaos.platform.com,resources=podrestarters/finalizers,verbs=update
+// +kubebuilder:rbac:groups=resilience.demo.com,resources=podrestarters,verbs=get;list;watch;create;update;patch;delete
+// +kubebuilder:rbac:groups=resilience.demo.com,resources=podrestarters/status,verbs=get;update;patch
+// +kubebuilder:rbac:groups=resilience.demo.com,resources=podrestarters/finalizers,verbs=update
 // +kubebuilder:rbac:groups="",resources=pods,verbs=get;list;watch;delete
 
 // Reconcile is the main reconciliation loop
